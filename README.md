@@ -1,39 +1,69 @@
-# Heisenberg
-Voice Assistant in python 
+# 🧠 Wikipedia Synchronize AI Voice Command Assistant
 
-#### Packages needs to install
+An intelligent Python-based voice assistant that fetches real-time information from Wikipedia using voice commands. Designed with an interactive GUI, this assistant offers hands-free information retrieval, accessibility features, and a modular structure for expansion.
 
-<!-- Code block-->
+---
+
+## 🚀 Features
+
+- 🎙️ **Voice-activated control** using speech recognition
+- 🖥️ **Graphical User Interface (GUI)** built with Tkinter
+- 📡 **Wikipedia Integration** for real-time knowledge access
+- 🔊 **Text-to-Speech (TTS)** using `pyttsx3`
+- 💬 **Command Logging** and custom command recognition
+- 🧪 Additional tools like:
+  - Password Generator
+  - Snake Game with sound effects
+  - Voice-activated search
+  - Notes and experiment modules
+
+---
+
+## 🛠 Technologies Used
+
+| Tech             | Description                             |
+|------------------|-----------------------------------------|
+| Python           | Core programming language               |
+| Tkinter          | GUI framework                           |
+| pyttsx3          | Text-to-Speech synthesis                |
+| SpeechRecognition| Voice input processing                  |
+| Wikipedia API    | Fetches summaries and data              |
+| SQLite3          | Local data storage                      |
+
+---
+
+## 📁 Project Structure
+wikipedia_voice_asistant/
+│
+├── wikipedia_voice_assistant.py # Main voice assistant script
+├── experiments/ # Test modules and prototypes
+├── Notes/ # Text-based voice logs/notes
+├── Screenshots/ # UI screenshots
+├── snake images/ # Game assets
+├── snake sounds/ # Game sound effects
+├── .gitignore # Ignored files/folders
+├── README.md # Project overview
+├── requirements.txt # Python dependencies
+
+
+
+----------------------------------------------------------------------
+
+## ⚙️ How to Run the Project
+
+1. 📦 Create a virtual environment:
 
 ```bash
-pip install pyttsx3
-pip install wikipedia
-pip install requests
-pip install PyAutoGUI
-pip install sounddevice
-pip install playsound
-pip install wolframalpha
-pip install urllib3
-pip install bs4
-pip install wheel
-pip install google-api-python-client
-pip install monotonic
-pip install SpeechRecognition
-pip install scipy
-pip install threaded
-pip install functools
-pip install pywhatkit
-pip install pyjokes
-pip install pygame
-pip install pyperclip
-pip install opencv-python
-pip install pysqlite3
-pip install db-sqlite3
-```
-For installation of pyaudio
-```bash
-pip intall pipwin
-pipwin install pyaudio
-pip install --upgrade pyaudio
-```
-#####Maybe all modules which are imported in code are not listed here. So install them respectively if you encounter with a error like ModuleNotFound.
+python -m venv venv
+
+
+2. 📥 Install dependencies:
+
+````bash
+pip install -r requirements.txt
+
+
+3. ▶️ Run the main assistant:
+
+`````bash
+python wikipedia_voice_assistant.py
